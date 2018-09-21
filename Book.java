@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class car here.
  *
@@ -19,9 +18,9 @@ public class Book
     /**
      * Constructor for objects of class Book
      * 
-     * @param title is the title of the book
-     * @param lastName is the last name of the Author
-     * @param yearPublished is the year when the book was published
+     * @param theTitle is the title of the book
+     * @param theLastName is the last name of the Author
+     * @param theYearPublished is the year when the book was published
      * @param theFirstName is the first name of the Author
      * @param theFiction checks if the book is fiction or not
      * @param theWeightKilograms checks the weight of the book
@@ -58,7 +57,7 @@ public class Book
   
         fiction = theFiction;
 
-        if((theWeightKilograms <=0.0) || (theWeightKilograms >10.0)){
+        if (!((theWeightKilograms <=0.0) || (theWeightKilograms >10.0))){
             throw new IllegalArgumentException("The Weight of the book is too small or too large");
         }
         else{
